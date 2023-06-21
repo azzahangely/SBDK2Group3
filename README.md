@@ -2,40 +2,57 @@
 
 ## A. Langkah-langkah percobaan
 1. Mempersiapkan file text berukuran 1 MB, 10 MB, 100 MB, 500 MB, dan 1 GB
-File file diatas dapat dicari di link
--http://textfiles.com/etext/FICTION/alcott-little-261.txt
--https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/
+File file diatas dapat dicari di link :
+- http://textfiles.com/etext/FICTION/alcott-little-261.txt
+- https://www.i3s.unice.fr/~jplozi/hadooplab_lsds_2015/datasets/
 
-2. Membuat kode SimpleWordCount.java
+2. Membuat kode  `SimpleWordCount.java`
 
 
 3. Mengcompile program java SimpleWordCount
 
+```
 javac /namaFileWordCount.java
+```
+
+![Count](Images/cmdno4.jpg)
 
 4. Mengukur kecepatan eksekusi program java
- measure-command{java [compiled java] [path_to_input]}
-
+```
+measure-command{java [compiled java] [path_to_input]}
+```
 
 5. Lakukan langkah 2 sampai 4 untuk berbagai ukuran file
 
-6. Menyalakan hadoop dengan command start-all.cmd. 
+6. Menyalakan hadoop dengan command `start-all.cmd.`
 note: run as administrator, pindah direktori ke hadoop/sbin
 
 7. Membuat direktori tempat input
+```
 hadoop fs -mkdir [nama_direktori]
+```
 
 8. Menyimpan file input ke direktori
+```
 hadoop fs -put [path_to_input] [nama_direktori]
+```
 
 9. Menjalankan wordcount hadoop
+```
 hadoop jar [path to snapshot.JAR] [main_class name] [input_directory] [output_directory]
+```
 
 10. Menjalankan command 7 - 9. Command no 8 diganti dengan:
+```
 hdfs dfs -D dfs.blocksize=[Ukuran blok dalam satuan byte] -put [path_to_input.txt] [inputFolder]
-
+```
 
 ## B. Hasil (Tabel dan Grafik)
+![Tabel](Images/tabel.jpg)
+
+![Grafik](Images/grafik.jpg)
+
+
 
 ## C. Analysis
 
