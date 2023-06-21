@@ -131,7 +131,7 @@ javac /namaFileWordCount.java
 ```
 measure-command{java [compiled java] [path_to_input]}
 ```
-![Count](Images/cmdno4.jpg)
+<br> <img src="Images/cmdno4.jpg" width="600">
 
 5. Lakukan langkah 2 sampai 4 untuk berbagai ukuran file
 
@@ -162,11 +162,9 @@ hdfs dfs -D dfs.blocksize=[Ukuran blok dalam satuan byte] -put [path_to_input.tx
 
 Berikut merupakan data yang didapatkan pada input file dengan ukuran berbeda : 
 
-**Tabel**
-![Tabel](Images/tabel.jpg)
+**Tabel** <br> <img src="Images/tabel.jpg" width="600">
 
-**Grafik**
-![Grafik](Images/grafik.jpg)
+**Grafik** <br> <img src="Images/grafik.jpg" width="600">
 
 
 ## C. Analysis
