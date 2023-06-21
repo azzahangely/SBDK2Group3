@@ -15,12 +15,13 @@ File file diatas dapat dicari di link :
 javac /namaFileWordCount.java
 ```
 
-![Count](Images/cmdno4.jpg)
+
 
 4. Mengukur kecepatan eksekusi program java
 ```
 measure-command{java [compiled java] [path_to_input]}
 ```
+![Count](Images/cmdno4.jpg)
 
 5. Lakukan langkah 2 sampai 4 untuk berbagai ukuran file
 
