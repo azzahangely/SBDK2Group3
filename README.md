@@ -7,9 +7,9 @@
 
 ## A. Menginstal Development Kit 8 (JDK 8) windows x64
 1. Anda dapat mengklik tautan ini:
-https://www.oracle.com/java/technologies/downloads/#java8 <img src="Images/installJDK.png" alt="install jdk 8" width="400">
+https://www.oracle.com/java/technologies/downloads/#java8 <br> <img src="Images/installJDK.png" alt="install jdk 8" width="600">
 
-2. Klik _agreement box_ kemudian klik **Download jdk-8u371-windows-x64.exe**
+2. Klik _agreement box_ kemudian klik **Download jdk-8u371-windows-x64.exe** <br> <img src="Images/downloadJDK.png" alt="install jdk 8" width="600">
 
 3. Anda akan diarahkan ke web Oracle untuk melakukan pengunduhan.
 
@@ -39,11 +39,11 @@ https://hadoop.apache.org/release/2.9.2.html
 
 2. Klik **Download tar.gz** <br> <img src="Images/downloadTar.png">
 
-3. Pindahkan file `tar.gz` yang diunduh ke **Disk C**, kemudian ekstrak Hadoop pada **Disk C**. <br> <img src="Images/extractTar.png" width="400">
+3. Pindahkan file `tar.gz` yang diunduh ke **Disk C**, kemudian ekstrak Hadoop pada **Disk C**. <br> <img src="Images/extractTar.png" width="800">
 
 4. Klik **close** pada _pop up window_ di bawah ini setelah ekstrak berhasil dilakukan. <br> <img src="Images/close.jpg" width="400">
 
-5. Ganti nama folder Hadoop 2.9.2 menjadi hadoop <br> <img src="Images/renameHadoop.jpg" width="400">
+5. Ganti nama folder Hadoop 2.9.2 menjadi hadoop <br> <img src="Images/renameHadoop.jpg" width="600">
 
 6. Melakukan konfigurasi terhadap file hadoop dengan membuka folder hadoop → etc → hadoop. Kemudian buka file core-site.xml, mapred-site.xml , yarn-site.xml, hdfs-site.xml, dan hadoop-env.cmd di text editor. 
 
@@ -159,10 +159,14 @@ hdfs dfs -D dfs.blocksize=[Ukuran blok dalam satuan byte] -put [path_to_input.tx
 ```
 
 ## B. Hasil (Tabel dan Grafik)
+
+Berikut merupakan data yang didapatkan pada input file dengan ukuran berbeda : 
+
+**Tabel**
 ![Tabel](Images/tabel.jpg)
 
+**Grafik**
 ![Grafik](Images/grafik.jpg)
-
 
 
 ## C. Analysis
@@ -178,3 +182,5 @@ Pada percobaan hadoop dengan blok berukuran 128 dan blok berukuran 256 terdapat 
 Pada keseluruhan percobaan, program hadoop membutuhkan waktu yang lebih lama. Hal ini disebabkan oleh banyaknya pekerjaan yang dilakukan oleh hadoop. Pekerjaan-pekerjaan tersebut diantaranya,menginisiasi resource, melakukan mapping, split lalu proses wordcount (reduce). Sementara program SimpleWordCount berjalan lebih cepat karena tidak ada proses mapping dan split. Hal ini menunjukkan bahwa hadoop cocok digunakan untuk menangani data berukuran sangat besar yang tersimpan secara terdistribusi. Sementara program wordcount cocok digunakan pada sistem tunggal dengan data berukuran kecil sampai berukuran beberapa gigabyte
 
 ![AnalysisFigure2](Images/par3Analysis.jpg)
+
+(Sumber : https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edupristine.com%2Fblog%2Fhadoop-mapreduce-framework&psig=AOvVaw0szHTM_mFvaeqOXWFVn_Sb&ust=1687451326777000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKDv_5jk1P8CFQAAAAAdAAAAABAE)
