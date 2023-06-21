@@ -72,6 +72,9 @@ Kegiatan pemrosesan data dibagi menjadi dua tahap: map dan reduce, menggunakan g
 
 Pada tahap map, data input dibagi dan diproses secara bersamaan di beberapa node, menghasilkan pasangan kunci-nilai sementara. Data sementara kemudian digabungkan dan diproses lebih lanjut untuk menghasilkan output akhir pada tahap reduksi. Dengan memanfaatkan kemampuan komputasi terdistribusi dari klaster Hadoop, MapReduce secara otomatis mengatur penyebaran data, toleransi kesalahan, dan eksekusi paralel. Para pengembang dapat fokus pada implementasi fungsi map dan reduce, sedangkan Hadoop mengelola infrastruktur yang mendasarinya, karena menyediakan solusi yang skalabel dan toleran terhadap kesalahan untuk memproses dan menganalisis dataset dalam skala besar.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## Tutorial Instalasi
 
 ### Menginstal Development Kit 8 (JDK 8) windows x64
@@ -100,6 +103,7 @@ https://www.oracle.com/java/technologies/downloads/#java8 <br> <img src="Images/
 
 8. Buka cmd untuk memverifikasi instalasi <br> <img src="Images/verifyInstallation.png"  width="400">
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Instalasi Hadoop
@@ -177,6 +181,7 @@ https://hadoop.apache.org/release/2.9.2.html
 
 17. Ekstrak file tersebut, lalu ubah folder bin pada hadoop menjadi folder yang telah di ekstrak tersebut <br> _Sebelum :_ <br> <img src="Images/binbefore.png" width="400"> <br> _Sesudah :_ <br> <img src="Images/binafter.png" width="400">
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Pembandingan waktu eksekusi wordcount biasa dengan hadoop
 
@@ -226,6 +231,7 @@ hadoop jar [path to snapshot.JAR] [main_class name] [input_directory] [output_di
 ```
 hdfs dfs -D dfs.blocksize=[Ukuran blok dalam satuan byte] -put [path_to_input.txt] [inputFolder]
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Hasil (Tabel dan Grafik)
 
@@ -234,6 +240,8 @@ Berikut merupakan data yang didapatkan pada input file dengan ukuran berbeda :
 **Tabel** <br> <img src="Images/tabel.jpg" width="600">
 
 **Grafik** <br> <img src="Images/grafik.jpg" width="600">
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Analisis
@@ -252,6 +260,7 @@ Pada keseluruhan percobaan, program hadoop membutuhkan waktu yang lebih lama. Ha
 
 (Sumber : https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edupristine.com%2Fblog%2Fhadoop-mapreduce-framework&psig=AOvVaw0szHTM_mFvaeqOXWFVn_Sb&ust=1687451326777000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKDv_5jk1P8CFQAAAAAdAAAAABAE)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTORS -->
 ## Contributors
