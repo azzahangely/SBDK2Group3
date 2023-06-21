@@ -1,3 +1,11 @@
+# Instalasi Hadoop
+Hadoop Install Tutorial
+A. Install Development Kit 8 (JDK 8) windows x64
+Link diakses disini:
+https://www.oracle.com/java/technologies/downloads/#java8
+[Install JDK](Images/installJDK.png)
+
+
 # Pembandingan waktu eksekusi wordcount biasa dengan hadoop
 
 ## A. Langkah-langkah percobaan
