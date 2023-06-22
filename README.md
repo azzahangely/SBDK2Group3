@@ -68,6 +68,8 @@ Perhatian terhadap big data dapat diatasi oleh kerangka kerja komputasi terdistr
 
 ### Map Reduce
 
+ <img src="Images/mapreduce.png" alt="mapreduce" width="600">
+ 
 Kegiatan pemrosesan data dibagi menjadi dua tahap: map dan reduce, menggunakan gaya pemrograman dan kerangka kerja komputasi yang dikenal dengan nama MapReduce.
 
 Pada tahap map, data input dibagi dan diproses secara bersamaan di beberapa node, menghasilkan pasangan kunci-nilai sementara. Data sementara kemudian digabungkan dan diproses lebih lanjut untuk menghasilkan output akhir pada tahap reduksi. Dengan memanfaatkan kemampuan komputasi terdistribusi dari klaster Hadoop, MapReduce secara otomatis mengatur penyebaran data, toleransi kesalahan, dan eksekusi paralel. Para pengembang dapat fokus pada implementasi fungsi map dan reduce, sedangkan Hadoop mengelola infrastruktur yang mendasarinya, karena menyediakan solusi yang skalabel dan toleran terhadap kesalahan untuk memproses dan menganalisis dataset dalam skala besar.
